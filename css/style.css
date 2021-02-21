@@ -1,0 +1,90 @@
+:root{
+    --rojo-ninja: #CA2128;
+    --turquesa-ninja:#42CBAA;
+    --naranja-ninja:#F66C45;
+    --gris-ninja:#ADBBC9;
+    --rosa-ninja:#FD8C8D;
+    --azul-ninja:#1492E6;
+    --gris-descripcion:#4D4D4D;
+    --gris-item:#808080;
+    --card-background:#FBFBFB;
+    --input-background: #808080;
+    --dark-background:#222222;
+    --font-secundary: 'Orbitron', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+    --size-title: 50px;
+    --size-title-mobile: 25px;
+    --size-subtitle: 30px;
+    --size-subtitle-mobile: 18px;
+    --items-nav-footer: 16px;
+    --captions: 10px;
+    --body: 18px;
+    --body-mobile: 14px;
+    --title-cards: 36px;
+    --card-caption: 10px;
+    --card-body: 14px;
+    --card-feature-title: 12px;
+    --card-feature-description: 12px;
+    --button: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-primary);
+    font-size: var(--body-mobile);
+}
+
+h1, h2{
+    font-family: var(--font-secundary);
+    font-size: var(--size-title-mobile);
+}
+
+/* Navbar Section */
+.navbar{
+    background-color: var(--dark-background);
+}
+.navbar-logo{
+    width: 89px;
+}
+/* Header Section */
+
+/* Our Animart Section */
+
+/* Formulario */
+
+/* Footer */
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    /* Navbar Section */
+
+    /* Header Section */
+
+    /* Our Animart Section */
+
+    /* Formulario */
+
+    /* Footer */
+}
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: var(--body);
+    }
+    h1, h2 {
+        font-size: var(--size-title);
+    }
+    /* Navbar Section */
+
+    /* Header Section */
+
+    /* Our Animart Section */
+
+    /* Formulario */
+
+    /* Footer */
+}
