@@ -19,7 +19,7 @@
     --items-nav-footer: 16px;
     --captions: 10px;
     --body: 18px;
-    --body-mobile: 14px;
+    --body-mobile: 16px;
     --title-cards: 36px;
     --card-caption: 10px;
     --card-body: 14px;
@@ -37,6 +37,7 @@
 body{
     font-family: var(--font-primary);
     font-size: var(--body-mobile);
+    background-color: var(--dark-background);
 }
 
 h1, h2{
@@ -50,6 +51,9 @@ h1, h2{
 }
 .navbar-logo{
     width: 89px;
+}
+.custom-toggler{
+    border-color: var(--rojo-ninja);
 }
 /* Header Section */
 
