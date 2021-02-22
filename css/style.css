@@ -1,4 +1,5 @@
 :root{
+    --white: #FFFFFF;
     --rojo-ninja: #CA2128;
     --turquesa-ninja:#42CBAA;
     --naranja-ninja:#F66C45;
@@ -19,13 +20,14 @@
     --items-nav-footer: 16px;
     --captions: 10px;
     --body: 18px;
-    --body-mobile: 16px;
+    --body-mobile: 14px;
     --title-cards: 36px;
     --card-caption: 10px;
     --card-body: 14px;
     --card-feature-title: 12px;
     --card-feature-description: 12px;
     --button: 16px;
+    
 }
 
 *{
@@ -43,45 +45,287 @@ body{
 h1, h2{
     font-family: var(--font-secundary);
     font-size: var(--size-title-mobile);
+    font-weight: 700;
+    color: var(--white);
+}
+h3{
+    font-family: var(--font-primary);
+    font-size: var(--title-cards);
 }
 
 /* Navbar Section */
-.navbar{
-    background-color: var(--dark-background);
+.nav-row{
+    background-color: rgba(0, 0, 0, 0);
 }
+nav.navbar, nav.navbar .navbar-nav .nav-link, nav.navbar .navbar-nav .nav-link.active {
+    color: var(--white);
+  }
 .navbar-logo{
     width: 89px;
 }
-.custom-toggler{
-    border-color: var(--rojo-ninja);
+.navbar-toggler i{
+    color: var(--rojo-ninja);
+    font-size: xx-large;
 }
+
 /* Header Section */
+.header{
+    background-image: linear-gradient(359.75deg, rgba(0, 0, 0, 0.5) 17.28%, var(--dark-background) 84.16%), url('../Assets/images/backgrounds/rising-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    /* position: absolute;
+    top: 100; */
+}
+.header img.icon-ninja-header{
+    display: none;
+}
+.header h1{
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+}
 
 /* Our Animart Section */
+.our-animart-section{
+    background-color: var(--rojo-ninja);
 
-/* Formulario */
+}
+.our-animart-section .row{
+    text-align: center;
+}
+.our-animart-section h2{
+    width: 80%;
+    max-width: 646px;
+    font-weight: 700;
+}
+.our-animart-section .icon-ninja-ouranimart{
+    margin-left: 20px;
+    width: 106px;
+}
+.card-animart{
+    border-radius: 16px;
+    border: none;
+    max-width: 268px;
+    height: 400px;
+    margin: 0 auto;
+}
+.card-animart.deku-card{
+    background-color: var(--turquesa-ninja);
+}
+.card-animart.mikasa-card{
+    background-color: var(--gris-ninja);
+}
+.card-animart.inuyasha-card{
+    background-color: var(--naranja-ninja);
+}
+.card-animart.zakura-card{
+    background-color: var(--rosa-ninja);
+}
+.card-img{
+    width: 98px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.card-animart .card-body{
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+.card-animart h3{
+    color: var(--white);
+    font-weight: 700;
+    margin: 20px;
+}
+.card-animart .card-content{
+    background-color: var(--white);
+    border-radius: 32px 32px 16px 16px;
+    padding: 16px;
+}
+.card-animart .card-body .card-content .card-subtitle{
+    font-size: var(--card-caption);
+    font-weight: 700;
+    color: var(--rojo-ninja);
+}
+.card-animart .card-body .card-content .card-text{
+    font-size: var(--card-body);
+    font-weight: 300;
+    color: var(--gris-descripcion);
+}
+.card-animart .card-body .card-content .card-table h5{
+    color: var(--gris-descripcion);
+    font-size: var(--card-feature-title);
+    font-weight: 600;
+}
+.card-animart .card-body .card-content .card-table {
+    color: var(--gris-item);
+    font-size: var(--card-feature-description);
+    font-weight: 400;
+}
+.card-animart .card-content .card-link{
+    color: var(--gris-descripcion);
+    margin: 0 auto;
+}
+.card-animart .card-content .btn-primary {
+    border-radius: 16px;
+    padding: 3px;
+    color: var(--white);
+    background-color: var(--azul-ninja);
+    width: 159px;
+    height: 42px;
+    border: none;
+  }
+/* Form Section */
+.form-section{
+    background-image: linear-gradient(359.75deg, rgba(0, 0, 0, 0.5) 0.22%, #CA2128 95.63%),
+    url('../Assets/images/backgrounds/ninja-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.form-section .form-container{
+    margin: 0 auto;
+}
+.form-section .form-container h2{
+    text-align: center;
+}
+.form-section .form-container p{
+    text-align: center;
+    color: var(--white);
+    font-size: var(--size-subtitle-mobile);
+}
+.form-section .form-container img{
+    width: 208px;
+    display: none;
+}
+.ninja-form{
+    color: var(--white);
+    max-width: 350px;
+}
+.ninja-form input, .ninja-form textarea{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--input-background);
+    max-width: 350px;
+}
+.ninja-form input::placeholder, .ninja-form textarea::placeholder{
+    color: var(--gris-descripcion);
+    font-size: var(--body-mobile);
+    font-weight: 400;
+}
+.ninja-form .btn-primary{
+    background-color: var(--rojo-ninja);
+    color: var(--white);
+    border-color: var(--white);
+}
 
 /* Footer */
+.footer-section{
+    background: linear-gradient(180deg, #000000 0%, #222222 100%);
+    color: var(--gris-ninja);
+}
+.footer-section ul{
+    list-style: none;
+}
+.footer-section ul li{
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-section .footer-link{
+    color: var(--gris-ninja);
+    font-size: var(--items-nav-footer);
+    text-decoration: none;
+}
+.footer-section .icon-ninja-footer{
+    display: none;
+}
+.footer-section .footer-content span{
+    padding: 5px;
+}
+
+.footer-section .footer-disclaimers p{
+    margin: 0;
+    font-size: var(--captions);
+}
+.footer-section .footer-disclaimers span{
+    display: none;
+}
+.footer-section .footer-disclaimers .footer-link i{
+    font-size: var(--size-subtitle-mobile);
+    font-weight: 500;
+    color: var(--white);
+}
+
+
+
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-    /* Navbar Section */
-
-    /* Header Section */
-
-    /* Our Animart Section */
-
-    /* Formulario */
-
-    /* Footer */
-}
-@media only screen and (min-width: 1024px) {
     body {
         font-size: var(--body);
     }
     h1, h2 {
         font-size: var(--size-title);
     }
+    h3{
+        font-size: var(--size-subtitle);
+    }
+    /* Navbar Section */
+
+    /* Header Section */
+    .header{
+        background-image: linear-gradient(359.75deg, rgba(0, 0, 0, 0.5) 17.28%, #222222 84.16%),
+                          url('../Assets/images/backgrounds/rising-desktop.jpg');
+        height: 90vh;
+    }
+    .row-header img.icon-ninja-header{
+        display: block;
+    }
+    /* Our Animart Section */
+    .our-animart-section .row{
+        text-align: left;
+    }
+    .card-img{
+        width: 165px;
+        top: -25px;
+        right: -50px;
+    }
+    /* Form Section */
+    .form-section{
+        background-image: linear-gradient(359.75deg, rgba(0, 0, 0, 0.5) 0.22%, #CA2128 95.63%),
+        url('../Assets/images/backgrounds/ninja-desktop.jpg');
+    }
+    .form-section .form-container img{
+        display: block;
+
+    }
+    .form-section .form-container h2{
+        text-align: left;
+        width: 100%;
+    }
+    .form-section .form-container p{
+        font-size: var(--size-subtitle);
+        text-align: left;
+        width: 100%;
+    }
+    /* Footer */
+    .footer-section .footer-content .icon-ninja-footer{
+        display: block;
+        width: 80px;
+    }
+    .footer-section .footer-disclaimers .vertical-line{
+        display: block;
+        color: var(--rojo-ninja);
+        font-weight: 700;
+        font-size: var(--size-subtitle);
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+    
     /* Navbar Section */
 
     /* Header Section */

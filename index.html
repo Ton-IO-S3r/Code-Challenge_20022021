@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="./Assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/63a6f1198c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -12,44 +13,259 @@
     <title>Ninja</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <img class="navbar-logo" src="./Assets/icons/logo-ninja.svg" alt="logo">
-        </a>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#"><img src="./Assets/icons/icon-car.svg" alt="carrito"></a>
-                </li>
-            </ul>
+    <header class="container-fluid header">
+        <div class="row nav-row">
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="navbar-logo" src="./Assets/icons/logo-ninja.svg" alt="logo">
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav justify-content-end align-items-center">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#"><img src="./Assets/icons/icon-car.svg" alt="carrito"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>   
         </div>
-    </nav>
-    </div>
-    
-    <header>
-
+        <div class="row row-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex mt-5 justify-content-center align-items-md-end">
+                            <img class="icon-ninja-header" src="./Assets/icons/ninja-hero.svg" alt="ninja-hero">
+                            <h1 class="ml-5 ml-lg-1">Forma parte del mejor Merchandising de Anime</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <section>
-
+    <section class="container-fluid our-animart-section">
+        <div class="row">
+            <div class="container">
+                <div class="row mt-5 justify-content-center align-items-end">
+                    <div class="col-12 d-flex mb-md-5 flex-wrap justify-content-center align-items-center">
+                        <h2>¿Ya conoces nuestro AniMart?</h2>
+                        <img class="icon-ninja-ouranimart m" src="./Assets/icons/ninja-mart.svg" alt="ninja-animart">
+                    </div>
+                    <div class="col-12 col-md-6 pt-5">
+                        <div class="card card-animart deku-card">
+                            <div class="d-flex flex-column card-body justify-content-between">
+                              <h3 class="card-title">¡Deku <br> Pop!</h3>
+                              <figure class="d-flex justify-content-center">
+                                <img class="card-img" src="./Assets/images/characters/deku.png" alt="Deku">
+                              </figure>
+                              <div class="card-content">
+                                <h6 class="card-subtitle mb-2">$ 190.00 mxn</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc consectetur feugiat eu.</p>
+                                <div class="card-table d-flex px-3 justify-content-between">
+                                    <div>
+                                        <h5>Material</h5>
+                                        <p>Plástico</p>
+                                    </div>
+                                    <div>
+                                        <h5>Dimensiones</h5>
+                                        <p>15 x 7 x 15</p>
+                                    </div>
+                                </div>
+                                <div class="card-buttons d-flex justify-content-center align-items-center">
+                                    <a href="#" class="card-link d-flex justify-content-center align-items-center"><i class="far fa-heart"></i></a>
+                                    <a href="#"
+                                        class="btn btn-primary pl-2 d-flex justify-content-center align-items-center">Agregar</a>
+                                </div>
+                                
+                              </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-5">
+                        <div class="card card-animart mikasa-card">
+                            <div class="d-flex flex-column card-body justify-content-between">
+                              <h3 class="card-title">¡Mikasa <br> Pop!</h3>
+                              <figure class="d-flex justify-content-center">
+                                <img class="card-img" src="./Assets/images/characters/mikasa.png" alt="Mikasa">
+                              </figure>
+                              <div class="card-content">
+                                <h6 class="card-subtitle mb-2">$ 200.00 mxn</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc consectetur feugiat eu.</p>
+                                <div class="card-table d-flex px-3 justify-content-between">
+                                    <div>
+                                        <h5>Material</h5>
+                                        <p>Plástico</p>
+                                    </div>
+                                    <div>
+                                        <h5>Dimensiones</h5>
+                                        <p>15 x 7 x 15</p>
+                                    </div>
+                                </div>
+                                <div class="card-buttons d-flex justify-content-center align-items-center">
+                                    <a href="#" class="card-link d-flex justify-content-center align-items-center"><i class="far fa-heart"></i></a>
+                                    <a href="#"
+                                        class="btn btn-primary pl-2 d-flex justify-content-center align-items-center">Agregar</a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-5">
+                        <div class="card card-animart inuyasha-card">
+                            <div class="d-flex flex-column card-body justify-content-between">
+                              <h3 class="card-title">¡Inuyasha <br> Pop!</h3>
+                              <figure class="d-flex justify-content-center">
+                                <img class="card-img" src="./Assets/images/characters/inuyasha.png" alt="Inuyasha">
+                              </figure>
+                              <div class="card-content">
+                                <h6 class="card-subtitle mb-2">$ 400.00 mxn</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc consectetur feugiat eu.</p>
+                                <div class="card-table d-flex px-3 justify-content-between">
+                                    <div>
+                                        <h5>Material</h5>
+                                        <p>Plástico</p>
+                                    </div>
+                                    <div>
+                                        <h5>Dimensiones</h5>
+                                        <p>15 x 7 x 15</p>
+                                    </div>
+                                </div>
+                                <div class="card-buttons d-flex justify-content-center align-items-center">
+                                    <a href="#" class="card-link d-flex justify-content-center align-items-center"><i class="far fa-heart"></i></a>
+                                    <a href="#"
+                                        class="btn btn-primary pl-2 d-flex justify-content-center align-items-center">Agregar</a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-5">
+                        <div class="card card-animart zakura-card">
+                            <div class="d-flex flex-column card-body justify-content-between">
+                              <h3 class="card-title">¡Zakura <br> Pop!</h3>
+                              <figure class="d-flex justify-content-center">
+                                <img class="card-img" src="./Assets/images/characters/zacura.png" alt="Zakura">
+                              </figure>
+                              <div class="card-content">
+                                <h6 class="card-subtitle mb-2">$ 315.00 mxn</h6>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc consectetur feugiat eu.</p>
+                                <div class="card-table d-flex px-3 justify-content-between">
+                                    <div>
+                                        <h5>Material</h5>
+                                        <p>Plástico</p>
+                                    </div>
+                                    <div>
+                                        <h5>Dimensiones</h5>
+                                        <p>15 x 7 x 15</p>
+                                    </div>
+                                </div>
+                                <div class="card-buttons d-flex justify-content-center align-items-center">
+                                    <a href="#" class="card-link d-flex justify-content-center align-items-center"><i class="far fa-heart"></i></a>
+                                    <a href="#"
+                                        class="btn btn-primary pl-2 d-flex justify-content-center align-items-center">Agregar</a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-
+    <section class="container-fluid form-section ">
+        <div class="row">
+            <div class="container no-gutters form-container">
+                <div class="row">
+                    <div class="col-12 col-md-7 pt-5 pl-5 pl-md-0 d-flex flex-column align-items-center align-items-md-start justify-content-center">
+                        <h2>¿Eres o tienes un <br> amigo Friki?</h2>
+                        <p>Envíale un Ninja-obsequio <br> personalizado, ¿Qué tan friki debe ser?...</p>
+                        <img src="./Assets/images/characters/onigiri.png" alt="onigiri">
+                    </div>
+                    <div class="col-12 col-md-5 mt-md-5 pt-3 pt-md-5 pl-0 d-flex flex-column align-items-center justify-content-center">
+                        <form class="ninja-form">
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Friki Kawai">
+                              </div>
+                            <div class="mb-3">
+                              <label for="inputEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" placeholder="fiki@email.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="textComment" class="form-label">¿Cómo debemos personalizar tu Ninja-obsequio?</label>
+                              <textarea class="form-control" id="textComment" placeholder="Quiero que sea tan friki como..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Así lo quiero</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-
+    <footer class="container-fluid footer-section">
+        <div class="row">
+            <div class="container">
+                <div class="row footer-content d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-md-4">
+                        <picture class="d-flex justify-content-center mb-3 mb-md-0">
+                            <img class="logo-footer" src="./Assets/icons/logo-ninja.svg" alt="ninja">
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <ul>
+                                <li><a class="footer-link" href="#">INICIO</a></li>
+                                <li><a class="footer-link" href="#">PRODUCTOS</a></li>
+                                <li><a class="footer-link" href="#">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                            <picture class="d-flex justify-content-start mb-3 mb-md-0">
+                                <img class="icon-ninja-footer" src="./Assets/icons/ninja-footer.svg" alt="ninja">
+                            </picture>
+                            <div class="d-flex flex-column align-items-center">
+                                <h5>INFORMACIÓN</h5>
+                                <span>info@ninja.MX</span>
+                                <span>+ 52 (800) 555 2525</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-disclaimers flex-column-reverse flex-md-row mt-5">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-3">
+                        <p>Ninja. Todos los derechos reservados 2021.</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-center align-items-center my-3">
+                        <a class="footer-link" href="#">Aviso de privacidad</a>
+                        <span class="vertical-line ml-3">|</span>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <a class="footer-link px-3" href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a class="footer-link px-3" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
